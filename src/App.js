@@ -1,24 +1,30 @@
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import Footer from './components/global-component/Footer';
+import Menu from './components/global-component/Menu';
 import logo from './logo.svg';
-import './App.css';
+import routes from './Routes/routes';
 
 function App() {
+
+  const getRoutes = (allroute) => {
+    // console.log(allroute)
+    // if(allroute.length>0){
+      return allroute.map((route,i) => (<Route key={i} exact path={route.to} element={route.component} />))
+    // }
+  }
+
+  console.log(getRoutes(routes))
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu />
+        <Routes>
+          {getRoutes(routes)}
+        </Routes>
+      <Footer />
+    </>
   );
 }
 

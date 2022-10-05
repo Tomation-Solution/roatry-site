@@ -1,6 +1,7 @@
 import React from "react";
 
 const MissionCard = (props) => {
+    
     return (
         <div className="mission-cards font-regular">
             <div>

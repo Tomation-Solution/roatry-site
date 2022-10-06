@@ -209,7 +209,7 @@ const LandingPage = () => {
                         <img height="130px" className=" container-radius gallery-img" src={gallery4}/>
                         <img height="130px" className="container-radius gallery-img " src={gallery5}/>
                     </div>
-                    <div className="col-2"><img height="250" className="image container-radius"  src={BiggerPics}  /></div>
+                    <div className="col-2"><img height={'100%'} className="image container-radius"  src={BiggerPics}  /></div>
                     <div className="col-2 display-flex content-between wrap">
                         <img height="130px" className=" container-radius gallery-img " src={gallery6}/>
                         <img className="gallery-img container-radius" height="130px" src={image}/>

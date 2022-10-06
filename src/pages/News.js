@@ -11,6 +11,7 @@ import new7 from '../assets/news/7.png';
 import new8 from '../assets/news/8.png';
 import new20 from '../assets/news/20.png';
 import Button from "../components/Button/Button";
+import { activities } from "./LandingPage";
 
 
 
@@ -20,66 +21,7 @@ import Button from "../components/Button/Button";
 
 const News = ()=>{
 
-    const activities = [
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new1
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new2
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new3
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new4
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new5
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new6
-        }
-        ,
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new7
-        }
-        ,
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new8
-        }
-    ]
+  
     return (
         <SliderLayout>
             <br/>
@@ -96,10 +38,10 @@ const News = ()=>{
                             {activities.slice(3,6).map(item => 
                                 (<Card image={item.img} date={item.date} location={item.location} contentTitle={item.title} contentText={item.text} />))}
                         </div> 
-                        <div className="display-flex content-between m-b activities">
+                        {/* <div className="display-flex content-between m-b activities">
                             {activities.slice(3,6).map(item => 
                                 (<Card image={item.img} date={item.date} location={item.location} contentTitle={item.title} contentText={item.text} />))}
-                        </div>
+                        </div> */}
                         <div className="display-flex content-center body-padding">
                         <Button class="btn-a" text='View all events' />
                         </div>

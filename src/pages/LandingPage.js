@@ -23,6 +23,10 @@ import new8 from '../assets/news/8.png';
 import new9 from '../assets/news/9.jpeg';
 import new10 from '../assets/news/10.jpg';
 import new20 from '../assets/news/20.png';
+import img_new from '../assets/news/IMG-20220628-WA0099.jpg';
+import img_new2 from '../assets/news/WhatsApp Image 2022-10-06 at 11.40.24 AM.jpeg'
+import prince from '../assets/news/prince.jpeg'
+import onikepo from '../assets/news/WhatsApp Image 2022-10-06 at 11.30.59 AM.jpeg'
 
 import BiggerPics from '../assets/gallery/BiggerPics.png';
 import gallery1 from '../assets/gallery/1.png';
@@ -59,68 +63,71 @@ const HeroBody = () => {
         </div>
     )
 }
+export const activities = [
+    {
+        date: '', 
+        location: 'Lagos', 
+        title:'Members birthday celebration',
+        text: "Members birthday celebration during one of our regular fellowship",
+        img: img_new
+    },
+    {
+        date: '', 
+        location: 'Lagos', 
+        title:'Literacy Programme',
+        text: "At the Rotary Basic Literacy Programme",
+        img: img_new2
+    },
+    {
+        date: '', 
+        location: 'Lagos', 
+        title:'Polo Event',
+        text: "At District Polio Event",
+        img: new3
+    },
+    {
+        date: '', 
+        location: '', 
+        title:'ceremony of Prince Akeem Akani Shonde',
+        text:`
+        At the wedding ceremony of Prince Akeem Akani Shonde, one of our members
+        `,
+        img: prince
+    },
+    {
+        date: '', 
+        location: 'Lagos', 
+        title:'Tree Planting',
+        text: "Club doing thier part to stay green for the environment",
+        img: new5
+    },
+    {
+        date: '', 
+        location: 'Lagos', 
+        title:' PP Onikepo Oshodi Visit',
+        text: "Visit to our Charter President, PP Onikepo Oshodi",
+        img: onikepo
+    }
+    ,
+    {
+        date: 'September 27th 2022', 
+        location: 'Lagos', 
+        title:'Lorem Ipsum',
+        text: "To ensure good fellowship amongst our member based on our club tradition",
+        img: new7
+    }
+    ,
+    {
+        date: 'September 27th 2022', 
+        location: 'Lagos', 
+        title:'Lorem Ipsum',
+        text: "To ensure good fellowship amongst our member based on our club tradition",
+        img: new10
+    }
+]
 const LandingPage = () => {
 
-    const activities = [
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new9
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new2
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new3
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new4
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new5
-        },
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new6
-        }
-        ,
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new7
-        }
-        ,
-        {
-            date: 'September 27th 2022', 
-            location: 'Lagos', 
-            title:'Lorem Ipsum',
-            text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new10
-        }
-    ]
+ 
 
     return (
         <div>
@@ -171,10 +178,10 @@ const LandingPage = () => {
                             {activities.slice(3,6).map(item => 
                                 (<Card image={item.img} date={item.date} location={item.location} contentTitle={item.title} contentText={item.text} />))}
                         </div> 
-                        <div className="display-flex content-between m-b activities">
+                        {/* <div className="display-flex content-between m-b activities">
                             {activities.slice(3,6).map(item => 
                                 (<Card image={item.img} date={item.date} location={item.location} contentTitle={item.title} contentText={item.text} />))}
-                        </div>
+                        </div> */}
                         <div className="display-flex content-center body-padding">
                         <Button class="btn-a" text='View all events' />
                         </div>

@@ -29,9 +29,8 @@ const Footer = () => {
                     <h1 className="footer-col-title">Connect With Us</h1>
                 </div>
                 <ul className='social-links display-flex routes row-direction content-between'> 
-                    <li><a><FaInstagram /></a></li>
-                    <li><a><FaFacebook /></a></li>
-                    <li><a><FaTwitter/></a></li>
+                    <li><a  target={'_blank'} style={{'color':'white'}}   href='https://www.instagram.com/rotaryclubogudu.gra/?igshid=YmMyMTA2M2Y%3D'><FaInstagram /></a></li>
+                    <li><a target={'_blank'}  style={{'color':'white'}}  href='https://mobile.facebook.com/story.php?story_fbid=pfbid02WL5mdJXQv3KeT8bVphvkbvDMdH6ssCm4sSkrMdY3yAQHpV2rLFDkb4tKNtci4MzSl&id=483630081720933&_rdc=1&_rdr'><FaFacebook /></a></li>
                 </ul>
             </div>
         </div>

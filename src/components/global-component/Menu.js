@@ -73,7 +73,7 @@ const Menu = () => {
                 <li className={splitPathName[1] === 'news' ? "active-link" : "links"}><Link to='/news'>News</Link></li>
                 <li className={splitPathName[1] === 'club-directory' ? "active-link" : "links"}><Link to='/club-directory'>Club Directory</Link></li>
                 <li className={splitPathName[1] === 'activities' ? "active-link" : "links"}><Link to='/activities'>Activities & Programmes</Link></li>
-                <li className={splitPathName[1] === 'about' ? "active-link" : "links"}><Link to='/about'>About Rotary</Link></li>
+                <li className={splitPathName[1] === 'about' ? "active-link" : "links"}><Link to='/about'>About</Link></li>
                 <li className={splitPathName[1] === 'contact' ? "active-link" : "links"}><Link to='/contact'>Contact</Link></li>
             </ul></div>
             <div className='right-hader-container display-flex row-direction content-between'>

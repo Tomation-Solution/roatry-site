@@ -12,10 +12,33 @@ import eye from '../assets/Icons/eye.jpeg'
 import badge from '../assets/Icons/badge.jpeg'
 import house from '../assets/Icons/house.jpeg'
 import blackcard from '../assets/Icons/black-card.jpeg'
+import new1 from '../assets/news/1.jpg';
+import new2 from '../assets/news/2.png';
+import new3 from '../assets/news/3.png';
+import new4 from '../assets/news/4.png';
+import new5 from '../assets/news/5.png';
+import new6 from '../assets/news/6.png';
+import new7 from '../assets/news/7.png';
+import new8 from '../assets/news/8.png';
+import new20 from '../assets/news/20.png';
+
+import BiggerPics from '../assets/gallery/BiggerPics.png';
+import gallery1 from '../assets/gallery/1.png';
+import gallery2 from '../assets/gallery/2.png';
+import gallery3 from '../assets/gallery/3.png';
+import gallery4 from '../assets/gallery/4.png';
+import gallery5 from '../assets/gallery/5.png';
+import gallery6 from '../assets/gallery/6.png';
+import gallery8 from '../assets/gallery/8.png';
+import gallery10 from '../assets/gallery/10.jpeg';
+import gallery12 from '../assets/gallery/12.jpeg';
+import gallery13 from '../assets/gallery/13.jpeg';
+
+// 20.png
 
 const HeroBody = () => {
     return (
-        <div style={{ backgroundImage: `url(${image})`, backgroundPosition: 'center' }} className="hero-landing-container column-direction display-flex">
+        <div style={{ backgroundImage: ` linear-gradient(to bottom, rgba(57, 29, 218, 0.11),black),url(${image})`, backgroundPosition: 'center' }} className="hero-landing-container column-direction display-flex">
             <div className="upper-landing-hero">
                 <h1 className="main-text bold-font secondary-color">We are an <span className="primary-color">Organization</span> aimed at helping
                     our society become a <span className="primary-color">Better Place</span></h1>
@@ -42,42 +65,58 @@ const LandingPage = () => {
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: image
+            img: new1
         },
         {
             date: 'September 27th 2022', 
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: image
+            img: new2
         },
         {
             date: 'September 27th 2022', 
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: image
+            img: new3
         },
         {
             date: 'September 27th 2022', 
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: image
+            img: new4
         },
         {
             date: 'September 27th 2022', 
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: image
+            img: new5
         },
         {
             date: 'September 27th 2022', 
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: image
+            img: new6
+        }
+        ,
+        {
+            date: 'September 27th 2022', 
+            location: 'Lagos', 
+            title:'Lorem Ipsum',
+            text: "To ensure good fellowship amongst our member based on our club tradition",
+            img: new7
+        }
+        ,
+        {
+            date: 'September 27th 2022', 
+            location: 'Lagos', 
+            title:'Lorem Ipsum',
+            text: "To ensure good fellowship amongst our member based on our club tradition",
+            img: new8
         }
     ]
 
@@ -119,7 +158,7 @@ const LandingPage = () => {
                 </div>
                 
                 <div className="body-padding">
-                    <div>
+                    <div >
                         <h2>Recent Activities</h2>
                         <div className="display-flex content-between m-b m-t activities">
                             {activities.slice(0,3).map(item => 
@@ -153,7 +192,7 @@ const LandingPage = () => {
                 </div>
                 <div className="display-flex content-end width-half">
                     <div className="image">
-                        <img className="container-radius" src={image}/>
+                        <img className="container-radius" src={new20}/>
                     </div>
                 </div>
             </div>
@@ -164,19 +203,19 @@ const LandingPage = () => {
                 </div>
                 <div className="gallery-holder display-flex content-between">
                     <div className="col-2 display-flex content-between wrap">
-                        <img className="gallery-img container-radius" height="130px" src={image}/>
-                        <img height="130px" className=" container-radius gallery-img " src={image}/>
-                        <img height="130px" className="container-radius gallery-img " src={image}/>
-                        <img height="130px" className=" container-radius gallery-img" src={image}/>
-                        <img height="130px" className="container-radius gallery-img " src={image}/>
+                        <img className="gallery-img container-radius" height="130px" src={gallery1}/>
+                        <img height="130px" className=" container-radius gallery-img " src={gallery2}/>
+                        <img height="130px" className="container-radius gallery-img " src={gallery3}/>
+                        <img height="130px" className=" container-radius gallery-img" src={gallery4}/>
+                        <img height="130px" className="container-radius gallery-img " src={gallery5}/>
                     </div>
-                    <div className="col-2"><img height="250" className="image container-radius" src={image} /></div>
+                    <div className="col-2"><img height="250" className="image container-radius"  src={BiggerPics}  /></div>
                     <div className="col-2 display-flex content-between wrap">
+                        <img height="130px" className=" container-radius gallery-img " src={gallery6}/>
                         <img className="gallery-img container-radius" height="130px" src={image}/>
-                        <img height="130px" className=" container-radius gallery-img " src={image}/>
-                        <img height="130px" className="container-radius gallery-img " src={image}/>
-                        <img height="130px" className=" container-radius gallery-img" src={image}/>
-                        <img height="130px" className="container-radius gallery-img " src={image}/>
+                        <img height="130px" className="container-radius gallery-img " src={gallery13}/>
+                        <img height="130px" className=" container-radius gallery-img" src={gallery10}/>
+                        <img height="130px" className="container-radius gallery-img " src={gallery12}/>
                     </div>
                 </div>
                 <div className="display-flex content-center">

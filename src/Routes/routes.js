@@ -1,5 +1,6 @@
 import React from "react";
 import AboutUs from "../pages/aboutUs";
+import ContactPage from "../pages/contact";
 import HistoryDetail from "../pages/HistoryDetail";
 import LandingPage from "../pages/LandingPage";
 import News from "../pages/News";
@@ -23,8 +24,11 @@ const routes = [
         component:<HistoryDetail/>
     },
     {
-        to:'/our_directors',
+        to:'/club-directory',
         component:<OurDirectors/>
+    },{
+        to:'/contact',
+        component:<ContactPage/>
     }
     // 
 ]

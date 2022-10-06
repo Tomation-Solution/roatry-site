@@ -2,6 +2,7 @@
 import React from "react"
 import { FlexCardContainer, FlexCardContentContainer, FlexCardImgContainer } from "./FlexCard.style";
 import Image from '../../assets/about/2.png'
+import { Link } from "react-router-dom"
 
 
 const FlexCard = (props)=>{
@@ -16,7 +17,7 @@ const FlexCard = (props)=>{
                 {props.text}
             </p>
 
-            <a href="">more</a>
+            <Link to="/history">more</Link>
            </FlexCardContentContainer>
 
             <FlexCardImgContainer>

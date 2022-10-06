@@ -3,7 +3,6 @@ import FlexCard from '../components/FlexCard/FlexCard'
 import img1 from '../assets/about/1.png'
 import img2 from '../assets/about/2.png'
 import img3 from '../assets/about/3.png'
-
 const about_dat = [
     
 ]

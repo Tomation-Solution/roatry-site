@@ -20,6 +20,8 @@ import new5 from '../assets/news/5.png';
 import new6 from '../assets/news/6.png';
 import new7 from '../assets/news/7.png';
 import new8 from '../assets/news/8.png';
+import new9 from '../assets/news/9.jpeg';
+import new10 from '../assets/news/10.jpg';
 import new20 from '../assets/news/20.png';
 
 import BiggerPics from '../assets/gallery/BiggerPics.png';
@@ -33,12 +35,12 @@ import gallery8 from '../assets/gallery/8.png';
 import gallery10 from '../assets/gallery/10.jpeg';
 import gallery12 from '../assets/gallery/12.jpeg';
 import gallery13 from '../assets/gallery/13.jpeg';
-
+import heroimage from '../assets/Slider/hero.jpg'
 // 20.png
 
 const HeroBody = () => {
     return (
-        <div style={{ backgroundImage: ` linear-gradient(to bottom, rgba(57, 29, 218, 0.11),black),url(${image})`, backgroundPosition: 'center' }} className="hero-landing-container column-direction display-flex">
+        <div style={{ backgroundImage: ` linear-gradient(to bottom, rgba(57, 29, 218, 0.11),black),url(${heroimage})`, backgroundPosition: 'center' }} className="hero-landing-container column-direction display-flex">
             <div className="upper-landing-hero">
                 <h1 className="main-text bold-font secondary-color">We are an <span className="primary-color">Organization</span> aimed at helping
                     our society become a <span className="primary-color">Better Place</span></h1>
@@ -65,7 +67,7 @@ const LandingPage = () => {
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new1
+            img: new9
         },
         {
             date: 'September 27th 2022', 
@@ -116,7 +118,7 @@ const LandingPage = () => {
             location: 'Lagos', 
             title:'Lorem Ipsum',
             text: "To ensure good fellowship amongst our member based on our club tradition",
-            img: new8
+            img: new10
         }
     ]
 
@@ -132,7 +134,7 @@ const LandingPage = () => {
                         </ContainerButton>
                     </div>
                     <div className="mission-inner">
-                        <div className="display-flex body-padding content-between">
+                        <div className="display-flex content-between">
                             <MissionCard src={circular} text="To execute service project in the Rotary Seven Area
                                     satisfaction of our community."/>
                             <MissionCard src={eye} text="To execute large and on
@@ -142,7 +144,7 @@ const LandingPage = () => {
                         <div className="display-flex content-center">
                             <MissionCard src={blackcard} style={{textAlign: 'center'}} text="To be a full PHF Club." />
                         </div>
-                        <div className="display-flex body-padding content-between">
+                        <div className="display-flex  content-between">
                             <MissionCard src={badge} text="To ensure good fellowship
                             amongst our members based on our Club traditions
                             and guided by priniciples, policies and best

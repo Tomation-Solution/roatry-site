@@ -205,6 +205,18 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
+           
+            <div className=" body-padding" style={{'max-width':'700px','margin':'0 auto'}} > 
+            <h1 className="bold-font" style={{'textAlign':'center'}}>Membership Benefits </h1>
+                        <ol>
+                            <li>Making friends and getting to know people in different classifications</li><br/>
+                            <li>Enjoy awesome fellowship with professionals from different industries  </li><br/>
+                            <li>Develop true and helpful friendships</li><br/>
+                            <li>An opportunity to serve your community, improve your vocation, and promote international friendship.</li><br/>
+                            <li>To meet other Rotarians when you attend District functions or other Clubs meetings </li><br/>
+                        </ol>
+            </div>
+
             <div className="gallery-section body-padding">
                 <div className="gallery-text-intro">
                     <h1 className="bold-font" style={{textAlign: 'center'}}>Our Gallery</h1>

@@ -7,7 +7,7 @@ const Footer = () => {
     return(
         <div className='body-padding footer display-flex content-start'>
             <div className='col'>
-                <img height='40px' src={logo}/>
+                <img height='40px' src={logo}  alt=''/>
                 {/* Logo Here */}
             </div>
             <div className='col'>

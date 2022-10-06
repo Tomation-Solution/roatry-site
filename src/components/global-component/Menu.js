@@ -65,7 +65,7 @@ const Menu = () => {
         <nav className="body-padding menu display-flex row-direction content-between">
             <div className='display-flex left-header-container row-direction'>
             <div className='logo'>
-                <img height='40px' src={logo} />
+                <img height='40px' src={logo}   alt=''/>
                 {/* <p className='logo-title'>Rotary of<br/>Ogudu</p> */}
             </div>
             <ul className='display-flex nav-container margin-left routes row-direction content-between'>

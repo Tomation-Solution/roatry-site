@@ -12,11 +12,11 @@ const SliderLayout = (props)=>{
             //  onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}
             >
                  <div>
-                    <img src={Image1} />
+                    <img src={Image1}  alt='' />
                     {/* <p className="legend">Legend 1</p> */}
                 </div>
                 <div>
-                    <img src={Image2}/>
+                    <img src={Image2}  alt=''/>
                     {/* <p className="legend">Legend 2</p> */}
                 </div>
             </Carousel>

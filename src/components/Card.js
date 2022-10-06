@@ -4,7 +4,7 @@ const Card = (props) => {
     return (
         <div className="card">
             <div className="card-header">
-                <img className="card-image container-radius" src={props.image} />
+                <img className="card-image container-radius" src={props.image} alt='' />
             </div>
             <div className="card-body">
                 <div className="card-meta-cotainer display-flex content-between">

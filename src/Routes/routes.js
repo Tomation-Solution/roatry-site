@@ -1,6 +1,7 @@
 import React from "react";
 import AboutUs from "../pages/aboutUs";
 import AchiveMents from "../pages/AchiveMents";
+import ClubMembers from "../pages/ClubMembers";
 import ContactPage from "../pages/contact";
 import HistoryDetail from "../pages/HistoryDetail";
 import LandingPage from "../pages/LandingPage";
@@ -33,6 +34,9 @@ const routes = [
     },{
         to:'/activities',
         component:<AchiveMents/>
+    },{
+        to:'/members',
+        component:<ClubMembers/>
     }
     // 
 ]

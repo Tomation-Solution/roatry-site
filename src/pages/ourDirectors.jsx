@@ -11,13 +11,7 @@ import img11 from '../assets/directors/11.png'
 import img12 from '../assets/directors/12.png'
 import img13 from '../assets/directors/13.png'
 import img7 from '../assets/directors/7.png'
-import memberDirPage from '../assets/RC Ogudu Members Directory 2022-1.jpg'
-import memberDirPage2 from '../assets/RC Ogudu Members Directory 2022-2.jpg'
-import memberDirPage3 from '../assets/RC Ogudu Members Directory 2022-3.jpg'
-import memberDirPage4 from '../assets/RC Ogudu Members Directory 2022-4.jpg'
 
-import RCOgudu1 from '../assets/da.jpg'
-import RCOgudu2 from '../assets/cray.jpg'
 // 
 
 const OurDirectors = ()=>{
@@ -123,23 +117,7 @@ const OurDirectors = ()=>{
         <br />
 
 
-        <h4 style={{'textAlign':'center','color':'#0632B6'}}>Members Directory</h4>
-        {/* */}
-        <div>
-          <img src={memberDirPage} alt="" style={{'width':'50%'}}/>
-          <img src={memberDirPage2} alt="" style={{'width':'50%'}}/>
-        </div>
-
-        <div>
-          <img src={memberDirPage3} alt="" style={{'width':'50%'}}/>
-          <img src={memberDirPage4} alt="" style={{'width':'50%'}}/>
-        </div>
-
-        <h4 style={{'textAlign':'center','color':'#0632B6'}}>RC Ogudu Club Committee</h4>
-        <div>
-          <img src={RCOgudu2} alt="" style={{'width':'50%'}}/>
-          <img src={RCOgudu1} alt="" style={{'width':'50%'}}/>
-        </div>
+      
         </div>
     )
 }

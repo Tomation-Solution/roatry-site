@@ -5,14 +5,51 @@ import Button from '../Button/Button';
 
 // Assets
 import logo from '../../assets/logo.jpeg'
-
+import NavDropDown from '../NavDropDown/NavDropDown';
+export const subLinks = [
+    {
+        title:'Club Directory',
+        url:'/members',
+        content:``
+    },
+    {
+        title:'Club Executive/Board Members',
+        url:'/club-directory',
+        content:''
+    }
+]
 const MobileMenu = (props) => {
+    const [linkdrop, setLinkdrop] = useState();
+
+    const handleDropDown = (e,id)=>{
+        e.preventDefault()
+        console.log('sfe')
+        if(e.target.id == id){
+          if(linkdrop==id){
+            setLinkdrop('')
+          }else{
+            setLinkdrop(id)
+          }
+        }
+      }
+    console.log({linkdrop})
     return(
         <div id='mobile-menu' className='display-flex column-direction'>
             <div className='nav'>
                 <li className={props.path === '' ? "active-link" : "links"}><Link to='/'>Home</Link></li>
                 <li className={props.path === 'news' ? "active-link" : "links"}><Link to='/news'>News</Link></li>
-                <li className={props.path === 'club-directory' ? "active-link" : "links"}><Link to='/club-directory'>Club Directory</Link></li>
+                <li className={props.path === 'club-directory' ? "active-link" : "links"}>
+                    {/* <Link to='/club-directory'>Club Directory</Link> */}
+                    <a 
+                    id='club-directory'
+                    onClick={(e)=>handleDropDown(e,'club-directory')} 
+                    // to='/club-directory'
+                    href=''
+                    >
+                        Club Directory
+                    </a>
+                <NavDropDown submenus={subLinks} dropdown={linkdrop=='club-directory'} />
+                </li>
                 <li className={props.path === 'activities' ? "active-link" : "links"}><Link to='/activities'>Activities & Programmes</Link></li>
                 <li className={props.path === 'about' ? "active-link" : "links"}><Link to='/about'>About Rotary</Link></li>
                 <li className={props.path === 'contact' ? "active-link" : "links"}><Link to='/contact'>Contact</Link></li>
@@ -30,9 +67,12 @@ const DropButton = () => {
     )
 }
 
+
 const Menu = () => {
     const location = useLocation();
     const {pathname} = location
+  const [linkdrop, setLinkdrop] = useState();
+
     const splitPathName = pathname.split('/')
 
     const [mobileMenu,setMobileMenu] = useState(false)
@@ -61,6 +101,19 @@ const Menu = () => {
             el.style.display = 'none'
         }
     }
+
+    const handleDropDown = (e,id)=>{
+        e.preventDefault()
+        console.log('sfe')
+        if(e.target.id == id){
+          if(linkdrop==id){
+            setLinkdrop('')
+          }else{
+            setLinkdrop(id)
+          }
+        }
+      }
+    //   console.log({linkdrop})
     return(
         <nav className="body-padding menu display-flex row-direction content-between">
             <div className='display-flex left-header-container row-direction'>
@@ -71,10 +124,24 @@ const Menu = () => {
             <ul className='display-flex nav-container margin-left routes row-direction content-between'>
                 <li className={splitPathName[1] === '' ? "active-link" : "links"}><Link to='/'>Home</Link></li>
                 <li className={splitPathName[1] === 'news' ? "active-link" : "links"}><Link to='/news'>News</Link></li>
-                <li className={splitPathName[1] === 'club-directory' ? "active-link" : "links"}><Link to='/club-directory'>Club Directory</Link></li>
+                <li 
+                className={splitPathName[1] === 'club-directory' ? "active-link" : "links"}
+                >
+                    <NavDropDown submenus={subLinks} dropdown={linkdrop=='club-directory'} />
+                    <a 
+                    id='club-directory'
+                    onClick={(e)=>handleDropDown(e,'club-directory')} 
+                    // to='/club-directory'
+                    href=''
+                    color='#653096'
+                    >
+                        Club Directory
+                    </a>
+                    </li>
                 <li className={splitPathName[1] === 'activities' ? "active-link" : "links"}><Link to='/activities'>Activities & Programmes</Link></li>
                 <li className={splitPathName[1] === 'about' ? "active-link" : "links"}><Link to='/about'>About</Link></li>
-                <li className={splitPathName[1] === 'contact' ? "active-link" : "links"}><Link to='/contact'>Contact</Link></li>
+                <li className={splitPathName[1] === 'contact' ? "active-link" : "links"}>
+                    <Link to='/contact'>Contact</Link></li>
             </ul></div>
             <div className='right-hader-container display-flex row-direction content-between'>
                 <a className='btn-a'>Member login</a>

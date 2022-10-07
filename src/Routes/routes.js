@@ -1,5 +1,6 @@
 import React from "react";
 import AboutUs from "../pages/aboutUs";
+import AchiveMents from "../pages/AchiveMents";
 import ContactPage from "../pages/contact";
 import HistoryDetail from "../pages/HistoryDetail";
 import LandingPage from "../pages/LandingPage";
@@ -29,6 +30,9 @@ const routes = [
     },{
         to:'/contact',
         component:<ContactPage/>
+    },{
+        to:'/activities',
+        component:<AchiveMents/>
     }
     // 
 ]

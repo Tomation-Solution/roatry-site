@@ -52,7 +52,7 @@ const HeroBody = () => {
             <div className="content-between bottom-landing-hero">
                 <div>
                     <p className="regular-font secondary-color">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt nisl sit amet tellus sollicitudin pharetra. Etiam convallis magna non efficitur facilisis. Curabitur euismod velit vel nisl euismod porta. Cras erat est, vulputate eget consequat a, congue id dui. Nulla rhoncus pharetra turpis vel molestie.
+                        {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt nisl sit amet tellus sollicitudin pharetra. Etiam convallis magna non efficitur facilisis. Curabitur euismod velit vel nisl euismod porta. Cras erat est, vulputate eget consequat a, congue id dui. Nulla rhoncus pharetra turpis vel molestie. */}
                     </p>
                 </div>
                 <div className="display-flex content-between inner-bootom-div">

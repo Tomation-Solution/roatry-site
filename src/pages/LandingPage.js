@@ -40,6 +40,8 @@ import gallery10 from '../assets/gallery/10.jpeg';
 import gallery12 from '../assets/gallery/12.jpeg';
 import gallery13 from '../assets/gallery/13.jpeg';
 import heroimage from '../assets/Slider/hero.jpg'
+import aimage from '../assets/b.jpeg'
+import bimage from '../assets/b.jpeg'
 // 20.png
 
 const HeroBody = () => {
@@ -56,8 +58,8 @@ const HeroBody = () => {
                     </p>
                 </div>
                 <div className="display-flex content-between inner-bootom-div">
-                    <a className="btn-a" style={{ backgroundColor: 'rgb(57, 29, 218)', color: 'white' }}>Join Rotary</a>
-                    <a className="btn-a">Become a Volunteer</a>
+                    {/* <a className="btn-a" style={{ backgroundColor: 'rgb(57, 29, 218)', color: 'white' }}>Join Rotary</a> */}
+                    {/* <a className="btn-a">Become a Volunteer</a> */}
                 </div>
             </div>
         </div>
@@ -166,6 +168,37 @@ const LandingPage = () => {
                     </div>
                 </div>
                 
+
+
+                <div className=" body-padding" style={{'max-width':'700px','margin':'0 auto'}} > 
+            <h1 className="bold-font" style={{'textAlign':'center'}}>Membership Benefits </h1>
+                        <ol>
+                            <li>Making friends and getting to know people in different classifications</li><br/>
+                            <li>Enjoy awesome fellowship with professionals from different industries  </li><br/>
+                            <li>Develop true and helpful friendships</li><br/>
+                            <li>An opportunity to serve your community, improve your vocation, and promote international friendship.</li><br/>
+                            <li>To meet other Rotarians when you attend District functions or other Clubs meetings </li><br/>
+                        </ol>
+            </div>
+
+            <div className=" body-padding" style={{'max-width':'700px','margin':'0 auto','textAlign':'center'}} > 
+            <h1 className="bold-font" style={{'textAlign':'center'}}>fellowship Detials</h1>
+            <br/>
+            
+            <p>Every Monday
+             </p>
+             <br/>
+            <p>
+            7:00pm for 7:30pm ,
+            </p>
+            <br/>
+
+            <p>
+            Leola Hotel,Maryland Lagos
+            </p>
+                       
+            </div>
+
                 <div className="body-padding">
                     <div >
                         <h2>Recent Activities</h2>
@@ -196,7 +229,7 @@ const LandingPage = () => {
                     </div>
                     <div>
                         <p>To ensure good fellowship amongst our members based on our Club traditions and duided by priniciples, policies and best practice of Rotary international.</p>
-                        <Button style={{ backgroundColor: 'white', color: 'rgb(57, 29, 218)' }} class="btn-a" text='Volunteer' />
+                        {/* <Button style={{ backgroundColor: 'white', color: 'rgb(57, 29, 218)' }} class="btn-a" text='Volunteer' /> */}
                     </div>
                 </div>
                 <div className="display-flex content-end width-half">
@@ -206,16 +239,6 @@ const LandingPage = () => {
                 </div>
             </div>
            
-            <div className=" body-padding" style={{'max-width':'700px','margin':'0 auto'}} > 
-            <h1 className="bold-font" style={{'textAlign':'center'}}>Membership Benefits </h1>
-                        <ol>
-                            <li>Making friends and getting to know people in different classifications</li><br/>
-                            <li>Enjoy awesome fellowship with professionals from different industries  </li><br/>
-                            <li>Develop true and helpful friendships</li><br/>
-                            <li>An opportunity to serve your community, improve your vocation, and promote international friendship.</li><br/>
-                            <li>To meet other Rotarians when you attend District functions or other Clubs meetings </li><br/>
-                        </ol>
-            </div>
 
             <div className="gallery-section body-padding">
                 <div className="gallery-text-intro">
@@ -229,6 +252,7 @@ const LandingPage = () => {
                         <img height="130px" className="container-radius gallery-img " src={gallery3}/>
                         <img height="130px" className=" container-radius gallery-img" src={gallery4}/>
                         <img height="130px" className="container-radius gallery-img " src={gallery5}/>
+                        <img height="130px" className="container-radius gallery-img " src={bimage}/>
                     </div>
                     <div className="col-2"><img height={'100%'} className="image container-radius"  src={BiggerPics}  /></div>
                     <div className="col-2 display-flex content-between wrap">
@@ -237,6 +261,7 @@ const LandingPage = () => {
                         <img height="130px" className="container-radius gallery-img " src={gallery13}/>
                         <img height="130px" className=" container-radius gallery-img" src={gallery10}/>
                         <img height="130px" className="container-radius gallery-img " src={gallery12}/>
+                        <img height="130px" className="container-radius gallery-img " src={aimage}/>
                     </div>
                 </div>
                 <div className="display-flex content-center">

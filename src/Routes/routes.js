@@ -1,6 +1,7 @@
 import React from "react";
 import AboutUs from "../pages/aboutUs";
 import AchiveMents from "../pages/AchiveMents";
+import ByeLaws from "../pages/ByeLaws";
 import ClubMembers from "../pages/ClubMembers";
 import ContactPage from "../pages/contact";
 import HistoryDetail from "../pages/HistoryDetail";
@@ -37,6 +38,9 @@ const routes = [
     },{
         to:'/members',
         component:<ClubMembers/>
+    },{
+        to:'/our-law',
+        component:<ByeLaws/>
     }
     // 
 ]

@@ -17,7 +17,7 @@ const FlexCard = (props)=>{
                 {props.text}
             </p>
 
-            <Link to="/history">more</Link>
+            {/* <Link to="/history">more</Link> */}
            </FlexCardContentContainer>
 
             <FlexCardImgContainer>

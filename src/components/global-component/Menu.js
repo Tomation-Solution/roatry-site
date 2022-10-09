@@ -124,7 +124,7 @@ const Menu = () => {
         console.log('sfe')
         setTimeout(()=>{
             setLinkdrop('')
-        },1000)
+        },1500)
         if(e.target.id == id){
           if(linkdrop==id){
             setLinkdrop('')

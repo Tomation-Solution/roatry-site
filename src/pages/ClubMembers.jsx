@@ -1,7 +1,9 @@
 
 import React from "react"
 import { ClubMemberCOntainer, ClubMembersMainContainer } from "./ClubMemberCOntainer.style"
-
+import balaYes from '../assets/PAG Bala Yesufu.jpeg';
+import tundeOjo from '../assets/PP Fikayo Tunde-Ojo.jpeg';
+import franca from '../assets/Rotarian Franca Nwosa.jpeg';
 
 const memebers = [
     {
@@ -26,7 +28,8 @@ const memebers = [
     },
     {
         name:`Rotn PP Fikayo Tunde-Ojo`,
-        job:`Entrepreneur`
+        job:`Entrepreneur`,
+        img:tundeOjo
     },
     {
         name:`Rotn Vivian Chinyere Ohiaeri`,
@@ -54,7 +57,8 @@ const memebers = [
     },
     {
         name:`Rotn PP Bala Yesufu`,
-        'job':`Beverage Export Marketing`        
+        'job':`Beverage Export Marketing` ,
+        img:balaYes      
     },
     {
         name:`Rotn PP Fidel Ogwuazor`,
@@ -108,7 +112,8 @@ const memebers = [
     },
     {
         name:`Rotn Franca Nwosa`,
-        'job':`Hospitality`        
+        'job':`Hospitality` ,
+        img:franca
     },
     {
         name:`Rotn Wasiu Paramole `,
@@ -249,9 +254,9 @@ const ClubMembers = ()=>{
     <h1 style={{'textAlign':'center','color':'rgb(6, 50, 182)'}}>Members Directory & Classifications of Members</h1>
               <ClubMembersMainContainer style={{'padding':'1rem'}}>
 {
-   memebers.map(({name,job},index)=>(
+   memebers.map(({name,job,img},index)=>(
         <ClubMemberCOntainer key={index}>
-        <img src="https://statinfer.com/wp-content/uploads/dummy-user.png" alt="" />
+        <img src={img?img:"https://statinfer.com/wp-content/uploads/dummy-user.png"} alt="" />
         <h2>{name}</h2>
         <p><small>{job}</small></p>
     </ClubMemberCOntainer>

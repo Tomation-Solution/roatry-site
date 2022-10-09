@@ -42,6 +42,7 @@ import gallery13 from '../assets/gallery/13.jpeg';
 import heroimage from '../assets/Slider/hero.jpg'
 import aimage from '../assets/b.jpeg'
 import bimage from '../assets/b.jpeg'
+import news11 from '../assets/news/weding.jpeg'
 // 20.png
 
 const HeroBody = () => {
@@ -96,13 +97,7 @@ export const activities = [
         `,
         img: prince
     },
-    {
-        date: '', 
-        location: 'Lagos', 
-        title:'Tree Planting',
-        text: "Club doing thier part to stay green for the environment",
-        img: new5
-    },
+    
     {
         date: '', 
         location: 'Lagos', 
@@ -125,6 +120,11 @@ export const activities = [
         title:'Lorem Ipsum',
         text: "To ensure good fellowship amongst our member based on our club tradition",
         img: new10
+    },{
+        
+        img:news11,
+        location:'Lagos',
+        text:'wedding ceremony of one of our members, Rotarian Marian Hassan'
     }
 ]
 const LandingPage = () => {

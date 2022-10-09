@@ -146,6 +146,7 @@ const Menu = () => {
                 <li className={splitPathName[1] === 'news' ? "active-link" : "links"}><Link to='/news'>News/Blog</Link></li>
                 <li 
                 className={splitPathName[1] === 'club-directory' ? "active-link" : "links"}
+                style={{'position':'relative'}}
                 >
                     <NavDropDown submenus={subLinks} dropdown={linkdrop=='club-directory'} />
                     <a 
@@ -159,13 +160,18 @@ const Menu = () => {
                     </a>
                     </li>
                 <li className={splitPathName[1] === 'activities' ? "active-link" : "links"}><Link to='/activities'>Activities & Programmes</Link></li>
-                <li className={splitPathName[1] === 'about' ? "active-link" : "links"}>
+                <li className={splitPathName[1] === 'about' ? "active-link" : "links"}
+                style={{'position':'relative'}}
+                >
                 <NavDropDown submenus={about_drop_link} dropdown={linkdrop=='about'} />
                     <a href='#' id='about'
                     onClick={(e)=>handleDropDown(e,'about')} 
                     >About</a>
                     </li>
-                <li className={splitPathName[1] === 'contact' ? "active-link" : "links"}>
+                <li className={splitPathName[1] === 'contact' ? "active-link" : "links"}
+                style={{'position':'relative'}}
+                
+                >
                     <Link to='/contact'>Contact</Link></li>
             </ul></div>
             <div className='right-hader-container display-flex row-direction content-between'>

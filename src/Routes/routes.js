@@ -4,6 +4,7 @@ import AchiveMents from "../pages/AchiveMents";
 import ByeLaws from "../pages/ByeLaws";
 import ClubMembers from "../pages/ClubMembers";
 import ContactPage from "../pages/contact";
+import GalleryPage from "../pages/GalleryPage";
 import HistoryDetail from "../pages/HistoryDetail";
 import LandingPage from "../pages/LandingPage";
 import News from "../pages/News";
@@ -41,6 +42,9 @@ const routes = [
     },{
         to:'/our-law',
         component:<ByeLaws/>
+    },{
+        to:'/gallery',
+        component:<GalleryPage/>
     }
     // 
 ]

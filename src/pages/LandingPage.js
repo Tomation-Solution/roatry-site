@@ -28,10 +28,10 @@ import img_new2 from '../assets/news/WhatsApp Image 2022-10-06 at 11.40.24 AM.jp
 import prince from '../assets/news/prince.jpeg'
 import onikepo from '../assets/news/WhatsApp Image 2022-10-06 at 11.30.59 AM.jpeg'
 
-import BiggerPics from '../assets/gallery/BiggerPics.png';
-import gallery1 from '../assets/gallery/1.png';
-import gallery2 from '../assets/gallery/2.png';
-import gallery3 from '../assets/gallery/3.png';
+import BiggerPics from '../assets/gallery/zeroEvent (1).jpg';
+import gallery1 from '../assets/gallery/zeroEvent (1).jpg';
+import gallery2 from '../assets/gallery/zeroEvent (2).jpg';
+import gallery3 from '../assets/gallery/zeroEvent (3).jpg';
 import gallery4 from '../assets/gallery/4.png';
 import gallery5 from '../assets/gallery/5.png';
 import gallery6 from '../assets/gallery/6.png';
@@ -43,6 +43,7 @@ import heroimage from '../assets/Slider/hero.jpg'
 import aimage from '../assets/b.jpeg'
 import bimage from '../assets/b.jpeg'
 import news11 from '../assets/news/weding.jpeg'
+import GalleryComponent from "../components/Gallery/Gallery.jsx";
 // 20.png
 
 const HeroBody = () => {
@@ -239,7 +240,6 @@ const LandingPage = () => {
                 </div>
             </div>
            
-
             <div className="gallery-section body-padding">
                 <div className="gallery-text-intro">
                     <h1 className="bold-font" style={{textAlign: 'center'}}>Our Gallery</h1>

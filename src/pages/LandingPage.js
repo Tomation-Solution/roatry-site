@@ -44,6 +44,7 @@ import aimage from '../assets/b.jpeg'
 import bimage from '../assets/b.jpeg'
 import news11 from '../assets/news/weding.jpeg'
 import GalleryComponent from "../components/Gallery/Gallery.jsx";
+import { useNavigate,useN} from "react-router-dom";
 // 20.png
 
 const HeroBody = () => {
@@ -129,9 +130,8 @@ export const activities = [
     }
 ]
 const LandingPage = () => {
-
+    const location = useNavigate()
  
-
     return (
         <div>
             <HeroContainer children={<HeroBody />} />
@@ -265,7 +265,9 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="display-flex content-center">
-                    <Button style={{paddingLeft: '45px' , paddingRight: '45px'}} class="btn-a" text='View Gallery'/>
+                    <Button style={{paddingLeft: '45px' , paddingRight: '45px'}} class="btn-a" text='View Gallery' firstButton={()=>{
+                        location('/gallery')
+                    }} />
                 </div>
             </div>
         </div>

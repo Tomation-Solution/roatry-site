@@ -72,8 +72,8 @@ export const activities = [
     {
         date: '', 
         location: 'Lagos', 
-        title:'Members birthday celebration',
-        text: "Members birthday celebration during one of our regular fellowship",
+        title:'Hand over  celebration',
+        text: "",
         img: img_new
     },
     {
@@ -86,19 +86,19 @@ export const activities = [
     {
         date: '', 
         location: 'Lagos', 
-        title:'Polo Event',
-        text: "At District Polio Event",
+        title:'Decoration of SAA ',
+        text: "",
         img: new3
     },
-    {
-        date: '', 
-        location: '', 
-        title:'ceremony of Prince Akeem Akani Shonde',
-        text:`
-        At the wedding ceremony of Prince Akeem Akani Shonde, one of our members
-        `,
-        img: prince
-    },
+    // {
+    //     date: '', 
+    //     location: '', 
+    //     title:'ceremony of Prince Akeem Akani Shonde',
+    //     text:`
+    //     At the wedding ceremony of Prince Akeem Akani Shonde, one of our members
+    //     `,
+    //     img: prince
+    // },
     
     {
         date: '', 
@@ -109,18 +109,18 @@ export const activities = [
     }
     ,
     {
-        date: 'September 27th 2022', 
+        date: '', 
         location: 'Lagos', 
-        title:'Lorem Ipsum',
-        text: "To ensure good fellowship amongst our member based on our club tradition",
+        title:"Interview at the President's Investiture Ceremony",
+        text: ".",
         img: new7
     }
     ,
     {
-        date: 'September 27th 2022', 
+        date: '', 
         location: 'Lagos', 
-        title:'Lorem Ipsum',
-        text: "To ensure good fellowship amongst our member based on our club tradition",
+        title:'',
+        text: "",
         img: new10
     },{
         
